@@ -1,0 +1,55 @@
+body {
+  background-color: hsl(212, 45%, 89%);
+  padding: 0;
+  margin: 0;
+  font-family: "poppins";
+}
+
+.main-content {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  background-color: hsl(0, 0%, 100%);
+  width: 20%;
+  height: auto;
+  border-radius: 15px;
+  padding: 15px;
+}
+
+.content img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+}
+
+.content h2 {
+  padding: 10px;
+  font-size: 20px;
+  text-align: center;
+  color: hsl(218, 44%, 22%);
+  font-weight: bold;
+}
+
+.content p {
+  padding: 10px;
+  font-size: 15px;
+  text-align: center;
+  color: hsl(220, 15%, 55%);
+}
+
+.attribution p a {
+  text-decoration: none;
+  color: rgb(5, 5, 119);
+}
+
+.attribution p a:hover {
+  text-decoration: underline;
+}
