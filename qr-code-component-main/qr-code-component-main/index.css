@@ -30,7 +30,7 @@ body {
   justify-content: center;
 }
 
-.content h2 {
+.content h1 {
   padding: 10px 0;
   font-size: 20px;
   text-align: center;
@@ -65,7 +65,7 @@ body {
     width: 100%;
   }
 
-  .content h2 {
+  .content h1 {
     font-size: 25px;
   }
 
