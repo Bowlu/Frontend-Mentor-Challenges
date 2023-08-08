@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/newsletter-signup-form-with-success-message-DLlHYxz63p)
+- Live Site URL: [Live site](https://newsletter-gold-one.vercel.app/)
 
 ## My process
 
