@@ -52,5 +52,5 @@ Using the CSS Grid auto flow property to switch columns.
 ## Author
 
 - Website - [Awoyemi Boluwatife](https://my-portfolio-adj.vercel.app/)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/Bowlu)
+- Frontend Mentor - [@Bowlu](https://www.frontendmentor.io/profile/Bowlu)
 - Twitter - [@bhowlu](https://www.twitter.com/bhowlu)
