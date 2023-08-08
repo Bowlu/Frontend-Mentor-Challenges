@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+</head>
+<body>
+
+  <!-- Sign-up form start -->
+  <section class="monthly-update-info">
+    <div id="subscribe-page" class="main-container">
+      <div class="image-container">
+        <img src="./assets/images/illustration-sign-up-mobile.svg" alt="header-image" class="mobile-image">
+        <!-- <img src="./assets/images/illustration-sign-up-desktop.svg" alt="desktop-header-image" class="desktop-image"> -->
+      </div>
+      <div class="main">
+        <h1>Stay updated!</h1>
+        <div class="update-info">
+          <p>Join 60,000+ product managers receiving monthly updates on:</p>
+        </div>
+        <div class="subscription-list">
+          <div class="main-list">
+            <ul>
+              <div class="list first">
+                <img src="./assets/images/icon-list.svg" alt="list-icon">
+                <li>Product discovery and building what matters</li>
+              </div>
+              <div class="list second">
+                <img src="./assets/images/icon-list.svg" alt="list-icon">
+                <li>Measuring to ensure updates are a success</li>
+              </div>
+              <div class="list third">
+                <img src="./assets/images/icon-list.svg" alt="list-icon">
+                <li>And much more!</li>
+              </div>
+            </ul>
+          </div>
+        </div>
+        <div class="form-data">
+          <form>
+            <label for="Email">Email address</label>
+            <label id="error-label" class="error-label" aria-live="assertive" role="alert"></label>
+            <br><br>
+            <input type="email" id="email" placeholder="email@company.com" required>
+          </form>
+          <button id="subscribe-btn">Subscribe to monthly newsletter</button>
+        </div>
+      </div>
+    </div>
+    <div id="subscription-message">
+      <div id="thank-you-page">
+        <img src="./assets/images/icon-success.svg" alt="success-icon">
+        <h3>Thanks for subscribing!</h3>
+        <p id="message">A confirmation email has been sent to <span id="email-placeholder"></span>. Please open it and click the button inside to confirm your subscription.</p>
+        <button id="dismiss-btn">Dismiss message</button>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Awoyemi Boluwatife</a>.
+    </div>
+  </footer>
+  <script src="./js/index.js"></script>
+</body>
+</html>

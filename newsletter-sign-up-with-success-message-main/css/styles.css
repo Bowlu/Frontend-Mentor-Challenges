@@ -1,0 +1,218 @@
+:root {
+  --primary-color: hsl(4, 100%, 67%);
+  --dark-slate-grey: hsl(234, 29%, 20%);
+  --charcoal-grey: hsl(235, 18%, 26%);
+  --grey: hsl(231, 7%, 60%);
+  --white: hsl(0, 0%, 100%);
+  --font: "Roboto", san-serif;
+  --padding: 0rem 2rem 0 1.5rem;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: var(--font);
+}
+
+.main-container {
+  width: 100%;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+}
+
+.image-container .desktop-image {
+  visibility: hidden;
+}
+
+.main h1 {
+  color: var(--charcoal-grey);
+  font-size: 40px;
+  font-weight: 700;
+  padding: var(--padding);
+}
+
+.update-info p {
+  padding: var(--padding);
+  line-height: 1.5;
+}
+
+.main-list ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  padding: 0 0 2rem 1.5rem;
+}
+
+.main-list ul .list {
+  margin-bottom : 1rem;
+}
+
+.main-list ul .list li {
+  padding-left: 1rem;
+  width: 80%;
+}
+
+.main-list ul .first {
+  grid-column: span 5;
+  display: inline-flex;
+}
+
+.main-list ul .second {
+  grid-column: span 5;
+  display: inline-flex;
+}
+
+.main-list ul .third {
+  grid-column: span 5;
+  display: inline-flex;
+}
+
+.form-data {
+  padding: 0 2rem 0 1.5rem;
+}
+
+.form-data form label {
+  color: var(--dark-slate-grey);
+  font-weight: bold;
+  font-size: 12px;
+  padding-bottom: 10px;
+}
+
+.form-data form input {
+  width: 90%;
+  height: 40px;
+  border-radius: 5px;
+  border: 1.5px solid var(--grey);
+}
+
+.form-data form input[placeholder="email@company.com"] {
+  padding: 0.5rem 0 0.5rem 1rem;
+  font-size: 15px;
+  color: var(--grey);
+}
+
+.form-data form input:hover {
+  border-color: hsl(234, 29%, 20%);
+  background-color: var(--white);
+}
+
+.form-data button {
+  margin: 2rem 0 2rem 0;
+  width: 100%;
+  font-size: 14px;
+  height: 50px;
+  color: var(--white);
+  font-weight: 700;
+  background-color: var(--dark-slate-grey);
+  border-radius: 10px;
+  border: 1.5px solid var(--dark-slate-grey);
+}
+
+.form-data button:active {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.form-data button:hover {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+#error-label {
+  color: var(--primary-color);
+  font-size: 12px;
+  display: none;
+  margin-left: 6rem;
+}
+
+.error-input {
+  border-color: var(--primary-color);
+  background-color: hsl(4, 46%, 81%);
+}
+.error-input::placeholder {
+  color: var(--primary-color);
+}
+
+#subscription-message {
+  display: none;
+  background-color: var(--white);
+  width: 20%;
+  height: 45%;
+  padding: 2.5rem;
+  border-radius: 20px;
+}
+
+#thank-you-page img {
+  width: 15%;
+}
+
+#thank-you-page h3 {
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--dark-slate-grey);
+}
+
+#thank-you-page #email-placeholder {
+  color: var(--dark-slate-grey);
+  font-weight: 700;
+}
+
+#subscription-message #dismiss-btn {
+  font-size: 13px;
+  height: 40px;
+  width: 100%;
+  margin: 10px 0px 30px 0px;
+  color: var(--white);
+  font-weight: 700;
+  background-color: var(--dark-slate-grey);
+  border-radius: 10px;
+  border: 1.5px solid var(--dark-slate-grey);
+}
+
+#subscription-message #dismiss-btn:hover {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color); 
+}
+
+@media screen and (min-width: 970px) {
+.monthly-update-info {
+  background-color: var(--dark-slate-grey);
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  padding: 3rem 0 3rem 0;
+}
+
+.main-container {
+  background-color: var(--white);
+  width: 65%;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 9fr 3fr;
+  grid-auto-flow: dense;
+  border-radius: 40px;
+}
+
+.image-container {
+  grid-column: 3;
+  background-image: url("../assets/images/illustration-sign-up-desktop.svg");
+  background-repeat: no-repeat;
+}
+
+.image-container .mobile-image {
+  visibility: hidden;
+}
+
+.image-container .desktop-image {
+  visibility: visible;
+  border-radius: none;
+}
+
+.main {
+  padding: 3rem 0rem 0 2rem;
+}
+}
